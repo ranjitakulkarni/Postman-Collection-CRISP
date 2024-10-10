@@ -25,10 +25,10 @@ jobs:
 
       # Setup Node.js environment for the github runner
       - name: Setup Node.js
-        run: actions/setup-node@v4.0.4
+        uses: actions/setup-node@v4.0.4
         with:
           node-version: '20.18.0'
-
+          
       # Install newman & html extra dependencies
       - name: Install newman and html extra
         run: npm install -g newman newman-reporter-htmlextra
